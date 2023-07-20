@@ -7,7 +7,7 @@ export default function Posts() {
 	return (
 		<section className='w-1/2 mx-auto bg-slate-50 p-2 rounded prose'>
 			<h1>📖 Blog</h1>
-			<ul>
+			<ul className='list-none'>
 				{posts.map(post => (
 					<ListItem post={post} key={post.id} />
 				))}
