@@ -2,7 +2,6 @@ import getFormattedDate from "@/lib/getFormattedDate"
 import Link from "next/link"
 import Image from "next/image"
 
-
 type Props = {
 	post: BlogPost
 }

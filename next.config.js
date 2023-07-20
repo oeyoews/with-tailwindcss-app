@@ -2,6 +2,7 @@
 
 // next.config.js
 
+const domains = ["images.unsplash.com", "www.gravatar.com"]
 const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
   options: {
@@ -21,6 +22,7 @@ const withMDX = require("@next/mdx")({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: { domains: ["images.unsplash.com", "www.gravatar.com"], },
+images: { domains },
   experimental: {
     mdxRs: true,
   },

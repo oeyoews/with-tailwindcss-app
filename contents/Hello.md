@@ -5,7 +5,7 @@ date: 2023-02-25
 
 ## Hello Nextjs
 
-This is my first Nextjs app(Hello Nextjs)
+This is my first **Nextjs** app(Hello Nextjs)
 
 ```js
 const demo = 1
