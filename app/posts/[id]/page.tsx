@@ -2,6 +2,7 @@ import getFormattedDate from "@/lib/getFormattedDate"
 import { getSortedPostsData, getPostData } from "@/lib/posts"
 import { notFound } from "next/navigation"
 import Link from "next/link"
+import ViewCounter from "@/components/viewcounter"
 
 export function generateStaticParams() {
 	const posts = getSortedPostsData()
@@ -45,6 +46,7 @@ export default async function Post({ params }: { params: { id: string } }) {
 			<h1 className="text-3xl mt-4 mb-0">{title}</h1>
 			<p className="mt-0">
 				{pubDate}
+				<ViewCounter slug={id} />
 			</p>
 			<article>
 				<section dangerouslySetInnerHTML={{ __html: contentHtml }} />
